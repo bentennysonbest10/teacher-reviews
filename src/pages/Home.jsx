@@ -35,6 +35,7 @@ function Home() {
 
   return (
     <div style={{ minHeight: '100vh', background: '#0a0e1a' }}>
+
       {/* Hero */}
       <div style={{
         background: 'linear-gradient(135deg, #0f1629 0%, #1a2340 50%, #0f1629 100%)',
@@ -44,7 +45,6 @@ function Home() {
         position: 'relative',
         overflow: 'hidden'
       }}>
-        {/* Decorative circles */}
         <div style={{
           position: 'absolute', top: -60, right: -60,
           width: 240, height: 240, borderRadius: '50%',
@@ -102,7 +102,6 @@ function Home() {
           const classSections = sections.filter(s => s.class_id === cls.id)
           return (
             <div key={cls.id} style={{ marginBottom: 40 }}>
-              {/* Semester label */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
                 <div style={{
                   width: 32, height: 32, borderRadius: 8,
@@ -121,7 +120,6 @@ function Home() {
                 <div style={{ flex: 1, height: 1, background: '#1e2a4a' }} />
               </div>
 
-              {/* Section buttons */}
               <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', paddingLeft: 44 }}>
                 {classSections.map((sec) => (
                   <button
@@ -164,12 +162,63 @@ function Home() {
 
       {/* Footer */}
       <div style={{
-        textAlign: 'center', padding: '24px',
         borderTop: '1px solid #1e2a4a',
-        color: '#3a4460', fontSize: 13, fontFamily: 'DM Sans'
+        padding: '32px 24px',
+        textAlign: 'center',
+        background: '#0a0e1a',
       }}>
-        Anonymous reviews · No login required
+        <p style={{
+          fontFamily: 'Sora',
+          fontWeight: 700,
+          fontSize: 16,
+          color: '#e8e8f0',
+          margin: '0 0 6px',
+        }}>
+          Teacher Review Platform
+        </p>
+
+        <p style={{
+          fontFamily: 'DM Sans',
+          fontSize: 13,
+          color: '#6b7280',
+          margin: '0 0 16px',
+        }}>
+          Anonymous reviews · No login required
+        </p>
+
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: 8,
+          background: '#111827',
+          border: '1px solid #1e2a4a',
+          borderRadius: 9999,
+          padding: '10px 18px',
+        }}>
+          <span style={{ fontSize: 14 }}>✉️</span>
+          <a
+            href="mailto:bentennysonbest10@gmail.com"
+            style={{
+              fontFamily: 'DM Sans',
+              fontSize: 13,
+              color: '#c9a84c',
+              textDecoration: 'none',
+            }}
+          >
+            bentennysonbest10@gmail.com
+          </a>
+        </div>
+
+        <p style={{
+          fontFamily: 'DM Sans',
+          fontSize: 11,
+          color: '#4b5563',
+          marginTop: 16,
+        }}>
+          For corrections or issues, reach out via email
+        </p>
       </div>
+
     </div>
   )
 }
