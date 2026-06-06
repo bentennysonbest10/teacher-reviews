@@ -95,7 +95,23 @@ function Home() {
           Anonymously rate and review your professors. Select your semester and section below.
         </p>
       </div>
-
+      <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginTop: 28 }}>
+        <button
+          onClick={() => navigate('/leaderboard')}
+          style={{
+            background: '#c9a84c',
+            border: 'none', borderRadius: 12,
+            padding: '12px 28px',
+            fontFamily: 'Sora', fontWeight: 700,
+            fontSize: 14, color: '#0a0e1a',
+            cursor: 'pointer', transition: 'all 0.2s'
+          }}
+          onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+          onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+        >
+          🏆 View Leaderboard
+        </button>
+      </div>
       {/* Semesters */}
       <div style={{ maxWidth: 860, margin: '0 auto', padding: '48px 24px' }}>
         {classes.map((cls, i) => {
