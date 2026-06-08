@@ -216,4 +216,3 @@ Every push to `main` auto-deploys to production.
 
 ## 👨‍💻 Built By
 
-Muhammad Ahmad — CS Student
