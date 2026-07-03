@@ -59,7 +59,7 @@ function Leaderboard() {
         }} />
 
         <button
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/home')}
           style={{
             background: 'none', border: 'none', cursor: 'pointer',
             color: '#c9a84c', fontFamily: 'DM Sans', fontSize: 14,
